@@ -71,7 +71,6 @@ async function getWeatherData(currentCity) {
   if (currentCity == undefined) {
     currentCity = await removeAccents();
   }
-  console.log(currentCity);
   apiResponse = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=4cebe15275c847b0942160532220311&q=${currentCity}&days=3`
   );
