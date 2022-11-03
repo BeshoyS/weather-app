@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
+body {
+  line-height: 1.9;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/********* Start Global *********/
+.main-color {
+  color: #37aec3;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+a {
+  color: #3199ab;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+a:hover {
+  color: #bfc1c8;
+}
+
+i {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+i:hover {
+  color: #37aec3;
+}
+
+.btn {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #37aec3;
+  background-color: #fff;
+  border: 1px solid #37aec3;
+}
+/********* End Global *********/
+
+/********* Start Display Temp *********/
+.display-temp {
+  background-image: url(../images/france.svg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.display-temp #search-bar {
+  padding: 5px 15px;
+  border: 1px solid #3199ab;
+  border-radius: 20px;
+}
+
+.display-temp .temp-card {
+  width: 32%;
+  border-radius: 8px;
+}
+
+.display-temp .temp-card:first-of-type {
+  background-color: #3199ab;
+}
+.display-temp .temp-card:first-of-type h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.display-temp .temp-card:first-of-type .day-and-date {
+  background-color: #374850;
+}
+
+.display-temp .temp-card:nth-of-type(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.display-temp .temp-card:nth-of-type(2),
+.display-temp .temp-card:nth-of-type(3) {
+  background-color: #83bbc4;
+  transition: all 0.3s;
+}
+
+.display-temp .temp-card:nth-of-type(2):hover,
+.display-temp .temp-card:nth-of-type(3):hover {
+  background-color: #3199ab;
+}
+
+.display-temp .temp-card .day-and-date {
+  background-color: #455a64;
+  color: #bfc1c8;
+  padding: 10px 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.display-temp .temp-card .day-and-date p {
+  margin: 0 !important;
+}
+
+.display-temp .temp-card #location {
+  font-size: 22px;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff;
+}
+
+.display-temp .temp-card .temp-datails {
+  padding: 25px;
+  color: #fff;
+}
+
+.display-temp .temp-card .temp-datails #today-description,
+.display-temp .temp-card .temp-datails .nextDay-description {
+  font-size: 14px;
+  color: #455a64;
+  text-shadow: 0 0 1px #455a64, 0 0 1px #455a64;
+}
+/* Small to Medium Screen */
+@media (max-width: 991px) {
+  /* Display Temp */
+  .display-temp .city-temp {
+    display: block !important;
+  }
+
+  .display-temp #search-bar {
+    margin-bottom: 10px !important;
+  }
+
+  .display-temp .temp-card {
+    width: 100%;
+    margin: 20px 0 !important;
+  }
+}
+/********* End Display Temp *********/
+
+/********* Start Footer *********/
+footer {
+  background-color: #374850;
+  padding: 10px 0;
+}
+
+/********* End Footer *********/
+
+/* Small to Medium Screen */
+@media (max-width: 991px) {
+  /* Display Temp */
+  .display-temp {
+    height: auto;
+  }
+  .display-temp .city-temp {
+    display: block !important;
+  }
+
+  .display-temp #search-bar {
+    margin-bottom: 10px !important;
+  }
+
+  .display-temp .temp-card {
+    width: 100%;
+    margin: 20px 0 !important;
+  }
+}
