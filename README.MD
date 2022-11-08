@@ -1,3 +1,3 @@
-#Weather App Using HTML, CSS, JS
+# Weather App Using HTML, CSS, JS
 
-###Live Demo: https://beshoys.github.io/weather-app/ 
+### Live Demo: https://beshoys.github.io/weather-app/ 
